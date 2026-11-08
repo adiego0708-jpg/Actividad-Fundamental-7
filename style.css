@@ -1,17 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ffffff;
+    color: #2c3e50;
 }
 
 header {
-    background-color: #004a87; /* Azul tipo universitario */
-    color: white;
-    padding: 20px;
+    background-color: #f8f9fa;
     text-align: center;
+    padding-bottom: 30px;
+}
+
+.imagen-header {
+    width: 100%;
+    max-width: 450px; /* Evita que la ilustración se haga gigante en pantallas grandes */
+    height: auto; /* Respeta la proporción original para que no se deforme ni recorte */
+    display: block;
+    margin: 20px auto; /* Centra la imagen perfectamente en el encabezado */
+}
+
+header h1 {
+    margin: 10px 0;
+    color: #004a87; /* Azul tipo UANL */
 }
 
 nav ul {
@@ -25,43 +37,89 @@ nav ul li {
 }
 
 nav a {
-    color: #ffd700; /* Dorado */
+    color: #004a87;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #f39c12;
 }
 
 section {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 80px 20px; 
+    text-align: center;
+}
+
+.contenedor-central {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Franjas de colores alternados */
+.fondo-blanco {
+    background-color: #ffffff;
+    color: #2c3e50;
+}
+
+.fondo-gris {
+    background-color: #eef2f5;
+    color: #2c3e50;
+}
+
+.fondo-azul-oscuro {
+    background-color: #004a87; /* Azul UANL */
+    color: #ffffff;
+}
+
+.fondo-azul-marino {
+    background-color: #003366; /* Azul UANL oscuro */
+    color: #ffffff;
 }
 
 .btn {
     display: inline-block;
-    background-color: #004a87;
-    color: white;
-    padding: 10px 15px;
+    background-color: #f39c12; /* Dorado/Naranja */
+    color: #ffffff;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .btn:hover {
-    background-color: #003366;
+    background-color: #d68910;
 }
 
 iframe {
     display: block;
-    margin: 0 auto;
+    margin: 30px auto 0;
     max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
+    padding: 30px;
+    background-color: #111820;
     color: white;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2ecc71;
 }
