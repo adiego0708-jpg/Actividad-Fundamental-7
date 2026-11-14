@@ -124,17 +124,6 @@ footer {
     color: white;
 }
 
-footer button {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
 /* ======================================= */
 /* ESTILOS PARA LOS DESPLEGABLES DE FIME   */
 /* ======================================= */
@@ -185,4 +174,61 @@ details[open] summary::after {
 .contenido-desplegable p {
     margin-top: 0;
     color: #333;
+}
+
+/* ======================================= */
+/* ANIMACIÓN Y NUEVAS IMÁGENES             */
+/* ======================================= */
+
+/* Animación de entrada suave (Fade In) */
+.animacion-suave {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para las imágenes dentro de las pestañas */
+.imagen-seccion {
+    width: 100%;
+    max-width: 600px; /* Tamaño máximo para que se vea elegante */
+    height: auto;
+    display: block;
+    margin: 40px auto 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ======================================= */
+/* BOTÓN VOLVER AL INICIO                  */
+/* ======================================= */
+.contenedor-volver {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff; 
+}
+
+#btnVolverArriba {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+#btnVolverArriba:hover {
+    background-color: #2ecc71;
 }
