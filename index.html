@@ -9,134 +9,233 @@
 <body>
 
     <header>
-        <!-- Imagen de inicio (estudiantes/universidad) -->
-        <img src="becas.jpg" alt="Ilustración de becas, birrete y libros" class="imagen-header">
+        <img src="gente.jpg" alt="Estudiantes universitarios en biblioteca" class="imagen-header">
         
-        <h1>Opciones de Becas para Estudiantes (UANL)</h1>
-        <p>Encuentra el apoyo financiero y de desarrollo ideal para continuar tus estudios universitarios.</p>
-        <nav>
-            <ul>
-                <li><a href="#catalogo">Catálogo Completo</a></li>
-                <li><a href="#english">Tipos de Becas</a></li>
-                <li><a href="#contacto">Contacto y Ayuda</a></li>
-                <li><a href="#tutorial">Video Tutorial</a></li>
-            </ul>
-        </nav>
+        <h1>Portal de Becas Universitarias</h1>
+        <p>Encuentra el apoyo financiero ideal para continuar tus estudios de ingeniería.</p>
+        
+        <div class="tabs-container">
+            <button id="btn-uanl" class="btn-tab active">Ver Becas UANL</button>
+            <button id="btn-fime" class="btn-tab">Ver Becas FIME</button>
+        </div>
     </header>
 
     <main>
-        <!-- Catálogo Principal (Fondo Blanco) -->
-        <section id="catalogo" class="fondo-blanco">
-            <div class="contenedor-central">
-                <h2>Becas - Universidad Autónoma de Nuevo León</h2>
-                <p>La UANL ofrece una amplia variedad de becas para apoyar el desarrollo académico, deportivo, cultural y personal de sus estudiantes. Consulta el portal principal para conocer todos los detalles generales.</p>
-                <a href="https://www.uanl.mx/tramites_categoria/becas/" target="_blank" class="btn">Ver la página principal de Becas UANL</a>
-            </div>
-        </section>
+        <!-- ========================================== -->
+        <!-- SECCIÓN UANL (Visible por defecto)         -->
+        <!-- ========================================== -->
+        <div id="seccion-uanl">
 
-        <!-- Beca 1 (Fondo Gris) -->
-        <section id="english" class="fondo-gris">
-            <div class="contenedor-central">
-                <h2>Beca de inglés English Challenge</h2>
-                <p>Programa dirigido a universitarios que buscan impulsar su aprendizaje del idioma inglés a través de una plataforma digital mediante retos mensuales.</p>
-                <a href="https://englishchallenge.becalos.mx/" target="_blank" class="btn">Más información sobre English Challenge</a>
-            </div>
-        </section>
+            <section id="english" class="fondo-gris">
+                <div class="contenedor-central">
+                    <h2>Beca de inglés English Challenge</h2>
+                    <p>Programa dirigido a universitarios que buscan impulsar su aprendizaje del idioma inglés a través de una plataforma digital mediante retos mensuales.</p>
+                    <a href="https://englishchallenge.becalos.mx/" target="_blank" class="btn">Más sobre English Challenge</a>
+                </div>
+            </section>
 
-        <!-- Beca 2 (Fondo Azul Oscuro) -->
-        <section id="convenio" class="fondo-azul-oscuro">
-            <div class="contenedor-central">
-                <h2>Becas por Convenio o Acuerdo Interinstitucional</h2>
-                <p>Otorgada a estudiantes que tienen una condición especial que les impida u obstaculice el acceso a sus estudios universitarios.</p>
-                <a href="https://www.uanl.mx/tramites/becas-por-convenio-o-acuerdo-interinstitucional/" target="_blank" class="btn">Ver detalles del Convenio</a>
-            </div>
-        </section>
+            <section id="convenio-uanl" class="fondo-azul-oscuro">
+                <div class="contenedor-central">
+                    <h2>Becas por Convenio o Acuerdo Interinstitucional</h2>
+                    <p>Otorgada a estudiantes que tienen una condición especial que les impida u obstaculice el acceso a sus estudios universitarios.</p>
+                    <a href="https://www.uanl.mx/tramites/becas-por-convenio-o-acuerdo-interinstitucional/" target="_blank" class="btn">Ver detalles del Convenio</a>
+                </div>
+            </section>
 
-        <!-- Beca 3 (Fondo Azul Marino) -->
-        <section id="liderazgo" class="fondo-azul-marino">
-            <div class="contenedor-central">
-                <h2>Becas de Representación y Liderazgo Estudiantil</h2>
-                <p>Apoyos brindados a través de la Fundación UANL, orientados al desarrollo de habilidades, liderazgo, ética y valores en los estudiantes.</p>
-                <a href="https://fundacionuanl.org.mx/" target="_blank" class="btn">Ir a Fundación UANL</a>
-            </div>
-        </section>
+            <section id="liderazgo" class="fondo-azul-marino">
+                <div class="contenedor-central">
+                    <h2>Becas de Representación y Liderazgo Estudiantil</h2>
+                    <p>Apoyos brindados a través de la Fundación UANL, orientados al desarrollo de habilidades, liderazgo, ética y valores en los estudiantes.</p>
+                    <a href="https://fundacionuanl.org.mx/" target="_blank" class="btn">Ir a Fundación UANL</a>
+                </div>
+            </section>
 
-        <!-- Beca 4 (Fondo Blanco) -->
-        <section id="prestacion" class="fondo-blanco">
-            <div class="contenedor-central">
-                <h2>Becas de Prestación Contractual</h2>
-                <p>Beneficio asignado a estudiantes que se desempeñan como trabajadores activos de la Universidad, así como a sus hijos o cónyuges.</p>
-                <a href="https://www.uanl.mx/tramites/becas-de-prestacion-contractual/" target="_blank" class="btn">Conocer requisitos contractuales</a>
-            </div>
-        </section>
+            <section id="prestacion-uanl" class="fondo-blanco">
+                <div class="contenedor-central">
+                    <h2>Becas de Prestación Contractual</h2>
+                    <p>Beneficio asignado a estudiantes que se desempeñan como trabajadores activos de la Universidad, así como a sus hijos o cónyuges.</p>
+                    <a href="https://www.uanl.mx/tramites/becas-de-prestacion-contractual/" target="_blank" class="btn">Requisitos contractuales</a>
+                </div>
+            </section>
 
-        <!-- Beca 5 (Fondo Gris) -->
-        <section id="culturales" class="fondo-gris">
-            <div class="contenedor-central">
-                <h2>Becas Culturales</h2>
-                <p>Beca de hasta el 100% dirigida a estudiantes que pertenecen y participan activamente en uno o más grupos artísticos representativos de la UANL.</p>
-                <a href="https://www.uanl.mx/tramites/becas-culturales/" target="_blank" class="btn">Ver requisitos culturales</a>
-            </div>
-        </section>
+            <section id="culturales" class="fondo-gris">
+                <div class="contenedor-central">
+                    <h2>Becas Culturales</h2>
+                    <p>Beca de hasta el 100% dirigida a estudiantes que pertenecen y participan activamente en uno o más grupos artísticos representativos de la UANL.</p>
+                    <a href="https://www.uanl.mx/tramites/becas-culturales/" target="_blank" class="btn">Ver requisitos culturales</a>
+                </div>
+            </section>
 
-        <!-- Beca 6 (Fondo Azul Oscuro) -->
-        <section id="academicas" class="fondo-azul-oscuro">
-            <div class="contenedor-central">
-                <h2>Becas Académicas</h2>
-                <p>Reconoce el mérito y la excelencia. Está dirigida a estudiantes con un desempeño académico sobresaliente y promedio superior a 85.</p>
-                <a href="https://www.uanl.mx/tramites/becas-academicas/" target="_blank" class="btn">Consultar becas académicas</a>
-            </div>
-        </section>
+            <section id="academicas-uanl" class="fondo-azul-oscuro">
+                <div class="contenedor-central">
+                    <h2>Becas Académicas</h2>
+                    <p>Reconoce el mérito y la excelencia. Está dirigida a estudiantes con un desempeño académico sobresaliente y promedio superior a 85.</p>
+                    <a href="https://www.uanl.mx/tramites/becas-academicas/" target="_blank" class="btn">Consultar becas académicas</a>
+                </div>
+            </section>
 
-        <!-- Beca 7 (Fondo Azul Marino) -->
-        <section id="federales" class="fondo-azul-marino">
-            <div class="contenedor-central">
-                <h2>Becas Federales</h2>
-                <p>Apoyos gubernamentales a nivel nacional, como las Becas Benito Juárez, que otorgan una ayuda económica periódica a los estudiantes.</p>
-                <a href="https://www.gob.mx/becasbenitojuarez" target="_blank" class="btn">Información sobre Becas Federales</a>
-            </div>
-        </section>
+            <section id="Federeales-uanl" class="fondo-blanco">
+                <div class="contenedor-central">
+                    <h2>Becas Federales</h2>
+                    <p>El programa de Becas para el Bienestar “Benito Juárez” en la Educación Media Superior, dará apoyo económico a los estudiantes que estén cursando el bachillerato en una escuela pública para abatir la deserción escolar.</p>
+                    <a href="https://www.uanl.mx/tramites/becas-federales/" target="_blank" class="btn">Conocer sobre Becas Federales</a>
+                </div>
+            </section>
 
-        <!-- Beca 8 (Fondo Blanco) -->
-        <section id="deportivas" class="fondo-blanco">
-            <div class="contenedor-central">
-                <h2>Becas Deportivas</h2>
-                <p>Beca del 100% otorgada a los alumnos que forman parte de los equipos deportivos que representan a la Universidad en competencias oficiales.</p>
-                <a href="https://www.uanl.mx/tramites/becas-deportivas/" target="_blank" class="btn">Conocer sobre Becas Deportivas</a>
-            </div>
-        </section>
+            <section id="deportivas-uanl" class="fondo-azul-marino">
+                <div class="contenedor-central">
+                    <h2>Becas Deportivas</h2>
+                    <p>Beca del 100% otorgada a los alumnos que forman parte de los equipos deportivos que representan a la Universidad en competencias oficiales.</p>
+                    <a href="https://www.uanl.mx/tramites/becas-deportivas/" target="_blank" class="btn">Conocer sobre Becas Deportivas</a>
+                </div>
+            </section>
 
-        <!-- Beca 9 (Fondo Gris) -->
-        <section id="escasos-recursos" class="fondo-gris">
-            <div class="contenedor-central">
-                <h2>Becas de Escasos Recursos</h2>
-                <p>Apoyo financiero destinado a estudiantes que provienen de familias cuyo ingreso total no excede el monto equivalente a cinco salarios mínimos.</p>
-                <a href="https://www.uanl.mx/tramites/becas-de-escasos-recursos/" target="_blank" class="btn">Ver requisitos para Escasos Recursos</a>
-            </div>
-        </section>
+            <section id="escasos-recursos-uanl" class="fondo-blanco">
+                <div class="contenedor-central">
+                    <h2>Becas de Escasos Recursos</h2>
+                    <p>Apoyo financiero destinado a estudiantes que provienen de familias cuyo ingreso total no excede el monto equivalente a cinco salarios mínimos.</p>
+                    <a href="https://www.uanl.mx/tramites/becas-de-escasos-recursos/" target="_blank" class="btn">Ver requisitos de Escasos Recursos</a>
+                </div>
+            </section>
+            
+            <!-- Video movido exclusivamente a la pestaña de UANL -->
+            <section id="tutorial" class="fondo-gris">
+                <div class="contenedor-central">
+                    <h2>¿Necesitas más ayuda?</h2>
+                    <p>Si necesitas una explicación más a detalle sobre las becas que otorga la UANL y cómo tramitarlas, ve este video:</p>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/CO4ouzFI55Q" title="Conoce los pasos para obtener una beca en la UANL" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
 
-        <!-- Contacto (Fondo Azul Oscuro) -->
-        <section id="contacto" class="fondo-azul-oscuro">
+        <!-- ========================================== -->
+        <!-- SECCIÓN FIME (Oculta por defecto)          -->
+        <!-- ========================================== -->
+        <div id="seccion-fime" style="display: none;">
+            
+            <!-- BECAS LICENCIATURA FIME -->
+            <section class="fondo-blanco">
+                <div class="contenedor-central">
+                    <h2>Becas Internas de Licenciatura FIME</h2>
+                    <p>Existen 6 tipos de becas que podrá solicitar cualquier alumno de las 12 Ingenierías incluidas en la oferta educativa de la FIME. Haz clic en cada opción para desplegar los detalles:</p>
+                    
+                    <details>
+                        <summary>01 Apoyo Económico</summary>
+                        <div class="contenido-desplegable">
+                            <p>Para aquellos estudiantes que comprueben su falta de recursos económicos, cuenten con avance académico y que obtuvieron beca por parte de rectoría con la clave 01, 02, 25 ó 75 para el periodo a cursar.</p>
+                            <a href="https://www.fime.uanl.mx/beca-de-apoyo-economico/" target="_blank" class="btn">Más Información</a>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>02 Académica</summary>
+                        <div class="contenido-desplegable">
+                            <p><strong>Alumnos de Alto Promedio:</strong> Estudiantes con promedio general mayor de 90 con todas sus materias aprobadas en ordinario a partir de 3° semestre cursado.</p>
+                            <p>Incluye también el Programa BECA-T, Grupo de los 100, Mérito Académico, Grupo Talentos y Grupos Estudiantiles.</p>
+                            <a href="https://www.fime.uanl.mx/becas-academicas/" target="_blank" class="btn">Más Información</a>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>03 Deportiva</summary>
+                        <div class="contenido-desplegable">
+                            <p>Estudiantes que forman parte de nuestros equipos representativos, dando preferencia a los que logren algún campeonato en la disciplina que practican.</p>
+                            <a href="https://www.fime.uanl.mx/becas-extracurriculares/" target="_blank" class="btn">Más Información</a>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>04 Empleado UANL</summary>
+                        <div class="contenido-desplegable">
+                            <p>Estudiantes que laboren en la UANL o la FIME, en sus diferentes niveles dependiendo en donde trabaje, además si es hijo o hija del trabajador.</p>
+                            <a href="https://www.fime.uanl.mx/becas-empleados-uanl/" target="_blank" class="btn">Más Información</a>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>05 Extracurricular</summary>
+                        <div class="contenido-desplegable">
+                            <p>Estudiantes que cumplieron con alguna actividad extracurricular destacada. (Tuna, Rondalla, Teatro, Danza, etc).</p>
+                            <a href="https://www.fime.uanl.mx/becas-extracurriculares/" target="_blank" class="btn">Más Información</a>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>06 Convenio</summary>
+                        <div class="contenido-desplegable">
+                            <p>Estudiantes que laboran en empresas que cuenten con algún tipo de convenio con FIME.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- BECAS POSGRADO FIME -->
+            <section class="fondo-gris">
+                <div class="contenedor-central">
+                    <h2>Becas de Posgrado FIME</h2>
+                    <p>Becas para maestrías en plan tetramestral, existen tres becas que podrás solicitar:</p>
+                    
+                    <details>
+                        <summary>02 Académica</summary>
+                        <div class="contenido-desplegable">
+                            <p>Estudiantes que fueron reconocidos como Mención Honorífica en cualquier licenciatura de la UANL.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>03 Deportiva</summary>
+                        <div class="contenido-desplegable">
+                            <p>Estudiantes que forman parte de nuestros equipos representativos, dando preferencia a los que logren algún campeonato en la disciplina que practican.</p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>04 Empleado UANL</summary>
+                        <div class="contenido-desplegable">
+                            <p>Estudiantes que laboren en la UANL o la FIME, en sus diferentes niveles dependiendo en donde trabaje, además si es hijo o hija del trabajador.</p>
+                        </div>
+                    </details>
+                    
+                    <a href="https://www.fime.uanl.mx/tramites/becas-posgrado/" target="_blank" class="btn">Becas de Posgrado Tetramestral</a>
+                </div>
+            </section>
+
+            <!-- NUEVO: BECAS FEDERALES -->
+            <section class="fondo-azul-oscuro">
+                <div class="contenedor-central">
+                    <h2>Becas Federales</h2>
+                    <p>Apoyos gubernamentales gestionados a través de la Coordinación Nacional de Becas para el Bienestar Benito Juárez.</p>
+                    
+                    <details>
+                        <summary>Programa de Educación Superior</summary>
+                        <div class="contenido-desplegable">
+                            <p>El programa de Becas para el Bienestar "Benito Juárez" en la Educación Superior, dará apoyo económico a los estudiantes que estén cursando su Licenciatura en una escuela pública para abatir la deserción escolar.</p>
+                            
+                            <!-- Botones con enlaces oficiales -->
+                            <a href="https://www.gob.mx/becasbenitojuarez" target="_blank" class="btn">Gobierno | gob.mx</a>
+                            <a href="https://www.gob.mx/becasbenitojuarez/articulos/becas-elisa-acuna" target="_blank" class="btn">Becas Elisa Acuña</a>
+                            <a href="https://www.facebook.com/BecasBenito" target="_blank" class="btn">Facebook Oficial</a>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SECCIONES COMUNES (Siempre visibles)       -->
+        <!-- ========================================== -->
+        <section id="contacto" class="fondo-azul-marino">
             <div class="contenedor-central">
                 <h2>Dirección del Departamento de Becas</h2>
                 <p>¿Tienes dudas sobre tu proceso, requisitos o necesitas asistencia con tu solicitud? Puedes solicitar ayuda y orientación directamente al Departamento de Becas de la UANL.</p>
                 <a href="https://www.uanl.mx/dependencias/departamento-de-becas/" target="_blank" class="btn">Solicitar ayuda al Departamento</a>
             </div>
         </section>
-
-        <!-- Video (Fondo Azul Marino) -->
-        <section id="tutorial" class="fondo-azul-marino">
-            <div class="contenedor-central">
-                <h2>¿Necesitas más ayuda?</h2>
-                <p>Si necesitas ayuda o una explicación más a detalle sobre las becas que otorga la UANL, ve este video:</p>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/NjEVkKOPyDs" title="Conoce los pasos para obtener una beca en la UANL" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <p>Proyecto Universitario de Desarrollo Web. Creado en 2026.</p>
-        <button id="btnInfo">Haz clic para alertas del SIASE</button>
+        <p>Actividad Fundamental 7</p>
     </footer>
 
     <script src="script.js"></script> 
